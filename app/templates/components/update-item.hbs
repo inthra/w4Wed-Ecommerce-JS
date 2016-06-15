@@ -4,37 +4,37 @@
     <form>
       <div class="form-group">
         <label for="title">Title: </label>
-        {{input value=item.title id="title"}}
+        {{input value=item.title id="updateTitle"}}
       </div>
 
       <div class="form-group">
         <label for="description">Description: </label>
-        {{input value=item.description id="description"}}
+        {{input value=item.description id="updateDescription"}}
       </div>
 
       <div class="form-group">
         <label for="price">Price: </label>
-        {{input value=item.price id="price"}}
+        {{input value=item.price id="updatePrice"}}
       </div>
 
       <div class="form-group">
         <label for="image">Image: </label>
-        {{input value=item.image id="image"}}
+        {{input value=item.image id="updateImage"}}
       </div>
 
       <div class="form-group">
         <label for="detail">Detail: </label>
-        {{input value=item.detail id="detail"}}
+        {{input value=item.detail id="updateDetail"}}
       </div>
 
       <div class="form-group">
         <label for="quantity">Quantity: </label>
-        {{input value=item.quantity id="quantity"}}
+        {{input value=item.quantity id="updateQuantity"}}
       </div>
-      <button {{action 'update' item}}>Save</button>
-
+      <button {{action 'update' item}} class="btn btn-success btn-xs">Save</button>
+      <span {{action "cancel"}} class="btn btn-default btn-xs">Cancel</span>
     </form>
   </div>
 {{else}}
-  <button {{action 'updateItemForm'}}>Update</button>
+  <button {{action 'updateItemForm'}} class="btn btn-default btn-xs">Update</button>
 {{/if}}

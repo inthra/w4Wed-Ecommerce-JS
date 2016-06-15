@@ -6,17 +6,20 @@ export default Ember.Component.extend({
     updateItemForm() {
       this.set('updateItemForm', true);
     },
-    update(params) {
-      var item = {
-        title: this.get('title'),
-        description: this.get('description'),
-        price: this.get('price'),
-        image: this.get('image'),
-        detail: this.get('detail'),
-        quantity: this.get('quantity')
+    update(item) {
+      var params = {
+        updateTitle: this.get('title'),
+        updateDescription: this.get('description'),
+        updatePrice: this.get('price'),
+        updateImage: this.get('image'),
+        updateDetail: this.get('detail'),
+        updateQuantity: this.get('quantity')
       };
       this.set('updateItemForm', false);
       this.sendAction('update', item, params);
+    },
+    cancel() {
+      this.set('updateItemForm', false);
     }
   }
 });
