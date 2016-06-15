@@ -1,0 +1,36 @@
+<h1>New City</h1>
+<div>
+  <form>
+    <div class="form-group">
+      <label for="title">Title: </label>
+      {{input value=title id="title"}}
+    </div>
+
+    <div class="form-group">
+      <label for="description">Description: </label>
+      {{input value=description id="description"}}
+    </div>
+
+    <div class="form-group">
+      <label for="price">Price: </label>
+      {{input value=price id="price"}}
+    </div>
+
+    <div class="form-group">
+      <label for="image">Image: </label>
+      {{input value=image id="image"}}
+    </div>
+
+    <div class="form-group">
+      <label for="detail">Detail: </label>
+      {{input value=detail id="detail"}}
+    </div>
+
+    <div class="form-group">
+      <label for="quantity">Quantity: </label>
+      {{input value=quantity id="quantity"}}
+    </div>
+
+    <button {{action 'saveItem'}}>Save</button>
+  </form>
+</div>
