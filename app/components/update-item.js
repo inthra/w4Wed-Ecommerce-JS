@@ -8,18 +8,23 @@ export default Ember.Component.extend({
     },
     update(item) {
       var params = {
-        updateTitle: this.get('title'),
-        updateDescription: this.get('description'),
-        updatePrice: this.get('price'),
-        updateImage: this.get('image'),
-        updateDetail: this.get('detail'),
-        updateQuantity: this.get('quantity')
+        title: this.get('title'),
+        description: this.get('description'),
+        price: this.get('price'),
+        image: this.get('image'),
+        detail: this.get('detail'),
+        quantity: this.get('quantity')
       };
       this.set('updateItemForm', false);
       this.sendAction('update', item, params);
     },
     cancel() {
       this.set('updateItemForm', false);
+    },
+    delete(item) {
+      if(confirm('Are you sure you want to delete this item?')) {
+        this.sendAction('destroyItem', item);
+      }
     }
   }
 });
