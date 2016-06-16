@@ -1,3 +1,17 @@
+img {
+  height: 300px;
+  width: 340px;
+}
+
+body {
+  background-image: url("http://www.goodwp.com/images/201107/goodwp.com_19210.jpg");
+}
+
+.style-hover:hover {
+  color: red;
+  font-weight: bold;
+}
+
 footer {
   text-align: center;
   right: 0;
@@ -6,12 +20,4 @@ footer {
   padding: 1rem;
   background-color: #e3f2fd;
   position: fixed;
-}
-
-img {
-  height: 300px;
-  width: 340px;
-}
-body {
-  background-image: url("http://www.goodwp.com/images/201107/goodwp.com_19210.jpg");
 }

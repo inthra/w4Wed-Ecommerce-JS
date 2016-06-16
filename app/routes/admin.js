@@ -18,6 +18,9 @@ export default Ember.Route.extend({
         }
       });
       item.save();
+    },
+    destroyItem(item) {
+      item.destroyRecord();
     }
   }
 });

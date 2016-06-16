@@ -1,5 +1,6 @@
+<h2>All item in database</h2>
 <ol>
   {{#each items as |item|}}
-    <li>{{item.title}} {{update-item item=item update="update"}}</li>
+    <li>{{item.title}} {{update-item item=item update="update" destroyItem="destroyItem"}}</li>
   {{/each}}
 </ol>
