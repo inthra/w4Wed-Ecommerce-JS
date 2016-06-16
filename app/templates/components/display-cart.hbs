@@ -1,3 +1,11 @@
-{{#each shoppingCart.items as |item|}}
-  {{item.title}} -- {{item.price}}<br>
-{{/each}}
+<div class="row">
+  {{#each shoppingCart.items as |item|}}
+    <div class="col-xs-4">
+      <h3>{{item.title}}</h3>
+      <img class="img-rounded" src="{{item.image}}" alt="Loading...">
+      <h4>${{item.price}}</h4>
+    </div>
+  {{/each}}
+</div>
+
+<h3>Total price: $</h3>
