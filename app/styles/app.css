@@ -29,10 +29,15 @@ input, textarea, form {
 
 footer {
   text-align: center;
+  margin-top: 10px;
   right: 0;
   bottom: 0;
   left: 0;
-  padding: 1rem;
-  background-color: #e3f2fd;
   position: fixed;
+  color: white;
+}
+
+.background {
+  background-color: #D9E0BC;
+  padding: 10px;
 }

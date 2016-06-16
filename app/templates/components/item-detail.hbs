@@ -1,9 +1,10 @@
-<ol>
+<h2>List of items</h2>
+<div class="row">
   {{#each items as |item|}}
-    <li>
+    <div class="col-xs-4">
       <h4>{{item.title}}</h4>
       <img class="admin-img"src="{{item.image}}" alt="Photo loading..." />
       {{update-item item=item update="update" destroyItem="destroyItem"}}
-    </li>
+    </div>
   {{/each}}
-</ol>
+</div>
