@@ -2,7 +2,11 @@ img {
   height: 300px;
   width: 340px;
 }
-
+header h1  {
+  text-align: center;
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, .5);
+  font-family: fantasy;
+}
 .admin-img {
   height: 150px;
   width: 190px;
@@ -40,4 +44,9 @@ footer {
 .background {
   background-color: #D9E0BC;
   padding: 10px;
+  margin-bottom: 15px;
+}
+
+#total {
+  color: white;
 }

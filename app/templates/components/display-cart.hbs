@@ -1,11 +1,12 @@
 <div class="row">
+  <h2>Your shopping cart:</h2>
   {{#each shoppingCart.items as |item|}}
     <div class="col-xs-4">
       <h3>{{item.title}}</h3>
       <img class="img-rounded" src="{{item.image}}" alt="Loading...">
       <h4>${{item.price}}</h4>
+      <button class ="btn btn-danger"{{action "remove" item}}>Delete</button>
     </div>
   {{/each}}
 </div>
-
-<h3>Total price: $</h3>
+<h3 id="total">Total cart price: $ {{shoppingCart.total}}</h3>
