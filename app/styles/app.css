@@ -9,6 +9,16 @@ img {
   margin-bottom: 5px;
 }
 
+.thin-text {
+  font-weight: normal;
+}
+
+#boxshadow {
+  position: relative;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, .5);
+  background: white;
+}
+
 body {
   background-image: url("http://www.goodwp.com/images/201107/goodwp.com_19210.jpg");
 }
