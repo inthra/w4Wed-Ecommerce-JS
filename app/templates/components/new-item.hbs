@@ -3,34 +3,34 @@
   <form>
     <div class="form-group">
       <label for="title">Title: </label>
-      {{input value=title id="title"}}
+      {{input value=title id="title" class="form-control"}}
     </div>
 
     <div class="form-group">
       <label for="description">Description: </label>
-      {{input value=description id="description"}}
+      {{textarea value=description id="description" class="form-control"}}
     </div>
 
     <div class="form-group">
       <label for="price">Price: </label>
-      {{input value=price id="price"}}
+      {{input value=price id="price" class="form-control"}}
     </div>
 
     <div class="form-group">
       <label for="image">Image: </label>
-      {{input value=image id="image"}}
+      {{input value=image id="image" class="form-control"}}
     </div>
 
     <div class="form-group">
       <label for="detail">Detail: </label>
-      {{input value=detail id="detail"}}
+      {{input value=detail id="detail" class="form-control"}}
     </div>
 
     <div class="form-group">
       <label for="quantity">Quantity: </label>
-      {{input value=quantity id="quantity"}}
+      {{input value=quantity id="quantity" class="form-control"}}
     </div>
 
-    <button {{action 'saveItem'}}>Save</button>
+    <button {{action 'saveItem'}}  class="btn btn-success btn-sm"> Save </button>
   </form>
 </div>

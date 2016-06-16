@@ -1,3 +1,7 @@
-{{new-item saveItem="saveItemToDB"}}
-<hr>
-{{item-detail items=model update="update"}}
+<div class="col-xs-6">
+  {{item-detail items=model update="update" destroyItem="destroyItem"}}
+</div>
+
+<div class="col-xs-4 col-xs-offset-1">
+  {{new-item saveItem="saveItemToDB"}}
+</div>

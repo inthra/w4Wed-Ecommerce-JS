@@ -4,38 +4,38 @@
     <form>
       <div class="form-group">
         <label for="title">Title: </label>
-        {{input value=item.title id="updateTitle"}}
+        {{input value=item.title id="updateTitle" class="form-control"}}
       </div>
 
       <div class="form-group">
         <label for="description">Description: </label>
-        {{input value=item.description}}
+        {{textarea value=item.description class="form-control"}}
       </div>
 
       <div class="form-group">
         <label for="price">Price: </label>
-        {{input value=item.price }}
+        {{input value=item.price class="form-control"}}
       </div>
 
       <div class="form-group">
         <label for="image">Image: </label>
-        {{input value=item.image}}
+        {{input value=item.image class="form-control"}}
       </div>
 
       <div class="form-group">
         <label for="detail">Detail: </label>
-        {{input value=item.detail}}
+        {{input value=item.detail class="form-control"}}
       </div>
 
       <div class="form-group">
         <label for="quantity">Quantity: </label>
-        {{input value=item.quantity}}
+        {{input value=item.quantity class="form-control"}}
       </div>
-      <button {{action 'update' item}} class="btn btn-success btn-xs">Save</button>
-      <span {{action "cancel"}} class="btn btn-default btn-xs">Cancel</span>
+      <button {{action 'update' item}} class="btn btn-success btn-sm">Save</button>
+      <span {{action "cancel"}} class="btn btn-default btn-sm">Cancel</span>
     </form>
   </div>
 {{else}}
-  <button {{action 'updateItemForm'}} class="btn btn-default btn-xs">Update</button>
-  <span {{action "delete" item}} class="btn btn-default btn-xs">Delete</span>
+  <button {{action 'updateItemForm'}} class="btn btn-success btn-sm">Update</button>
+  <span {{action "delete" item}} class="btn btn-warning btn-sm">Delete</span>
 {{/if}}

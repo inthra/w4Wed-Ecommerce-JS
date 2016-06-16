@@ -1,3 +1,22 @@
+img {
+  height: 300px;
+  width: 340px;
+}
+
+.admin-img {
+  height: 150px;
+  width: 190px;
+  margin-bottom: 5px;
+}
+
+body {
+  background-image: url("http://www.goodwp.com/images/201107/goodwp.com_19210.jpg");
+}
+
+input, textarea, form {
+  margin-bottom: 5px;
+}
+
 footer {
   text-align: center;
   right: 0;
@@ -6,12 +25,4 @@ footer {
   padding: 1rem;
   background-color: #e3f2fd;
   position: fixed;
-}
-
-img {
-  height: 300px;
-  width: 340px;
-}
-body {
-  background-image: url("http://www.goodwp.com/images/201107/goodwp.com_19210.jpg");
 }
