@@ -1,10 +1,8 @@
-
 <div class="col-xs-4">
   <div class="background">
-  <h3>{{item.title}}</h3>
-  {{#link-to 'item' item.id}}<img class="img-rounded" id="boxshadow" src="{{item.image}}" alt="Image Loading...">{{/link-to}}
-  <h4>$ {{item.price}}</h4>
-  <button {{action 'addToCart' item}} class="btn btn-info">Add to Cart</button>
-</div>
-
+    <h3>{{item.title}}</h3>
+    {{#link-to 'item' item.id}}<img class="img-rounded" id="boxshadow" src="{{item.image}}" alt="Image Loading...">{{/link-to}}
+    <h4>$ {{item.price}}</h4>
+    <button {{action 'addToCart' item}} class="btn btn-info">Add to Cart</button>
+  </div>
 </div>
